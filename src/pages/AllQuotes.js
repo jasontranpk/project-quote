@@ -4,24 +4,6 @@ import { getAllQuotes } from '../lib/api';
 import QuoteList from '../components/quotes/QuoteList';
 import LoadingSpinner from '../components/UI/LoadingSpinner';
 import NoQuotesFound from '../components/quotes/NoQuotesFound';
-const DUMMY_QUOTES = [
-	{
-		id: 'q1',
-		author: 'Max',
-		text: 'Learning React is Fun!',
-	},
-	{
-		id: 'q2',
-		author: 'Me',
-		text: 'Learning React is Cool!',
-	},
-	{
-		id: 'q3',
-		author: 'Jason',
-		text: 'Learning React is The Best!',
-	},
-];
-
 function AllQuotes() {
 	const {
 		sendRequest,

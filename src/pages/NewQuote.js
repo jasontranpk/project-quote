@@ -14,8 +14,6 @@ function NewQuote() {
 	}, [status, history]);
 	function addQuoteHandler(quoteData) {
 		sendRequest(quoteData);
-		console.log(quoteData);
-		history.push('/quotes');
 	}
 	return (
 		<QuoteForm
